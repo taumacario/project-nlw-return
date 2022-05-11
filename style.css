@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 :root {
-  --hue: 290;
+  --hue: 1;
   --primary-color: hsl(var(--hue), 100%, 26%, 1);
   --headline: hsl(210, 11%, 15%, 1);
   --paragraph: hsla(210, 9%, 31%, 1);
@@ -291,7 +291,13 @@ body.menu-expanded button path {
   text-align: left;
   background-color: #fff;
   border-radius: 0.6rem;
-  border: 1px solid var(--brand-light); }
+  border: 1px solid var(--brand-light);
+  transition: 0.2s; }
+
+#services .card:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 7px 1px #c8c8c8;
+  transform: scale(1.1) !important; }
 
 #services .card h3 {
   margin-block: 1.6rem; }
@@ -355,6 +361,9 @@ footer p {
 footer .social-links {
   justify-content: flex-start; }
 
+footer .social-links li:hover {
+  transform: scale(1.5); }
+
 /*=======FOOTER=====================*/
 #backToTopButton {
   position: fixed;
@@ -363,7 +372,9 @@ footer .social-links {
   opacity: 0;
   visibility: hidden;
   transform: translateY(100%);
-  transition: 400ms; }
+  transition: 400ms;
+  border: 2px solid #fff;
+  border-radius: 30px; }
 
 #backToTopButton.show {
   opacity: 1;
