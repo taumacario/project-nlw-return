@@ -70,6 +70,20 @@ function closeMenu(){
   document.body.classList.remove('menu-expanded')
 }
 
+function changeColorRed(){
+  document.body.className = '';
+  document.body.classList.add('changeColorRed')
+}
+function changeColorGreen(){
+  document.body.classList.toggle('changeColorGreen')
+}
+function changeColorBlue(){
+  document.body.classList.toggle('changeColorBlue')
+}
+function changeColorPurple(){
+  document.body.classList.toggle('changeColorPurple')
+}
+
 ScrollReveal({
   origin:'top',
   distance: '30px',
