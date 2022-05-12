@@ -481,7 +481,11 @@ footer .social-links {
   justify-content: flex-start;
 }
 
-footer .social-links li:hover {
+footer .social-links svg {
+  transition: 0.3s ease-in-out;
+}
+
+footer .social-links li:hover svg{
   transform: scale(1.5);
 }
 /*=======FOOTER=====================*/
@@ -495,6 +499,7 @@ footer .social-links li:hover {
   transition: 400ms;
   border: 2px solid #fff;
   border-radius: 30px;
+  display: flex;
 }
 
 #backToTopButton.show {

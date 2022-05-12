@@ -75,13 +75,16 @@ function changeColorRed(){
   document.body.classList.add('changeColorRed')
 }
 function changeColorGreen(){
-  document.body.classList.toggle('changeColorGreen')
+  document.body.className = '';
+  document.body.classList.add('changeColorGreen')
 }
 function changeColorBlue(){
-  document.body.classList.toggle('changeColorBlue')
+  document.body.className = '';
+  document.body.classList.add('changeColorBlue')
 }
 function changeColorPurple(){
-  document.body.classList.toggle('changeColorPurple')
+  document.body.className = '';
+  document.body.classList.add('changeColorPurple')
 }
 
 ScrollReveal({
