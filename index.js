@@ -47,14 +47,16 @@ function activeMenutCurrentSection (section){
 }
 
 function showNavOnScroll(){
-  if (scrollY > 0){
-    navigation.classList.add('scroll')
+  const nav = document.querySelector("#navigation")
+  if (scrollY > 1){
+    nav.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    nav.classList.remove('scroll')
   }
 }
 
 function showBackToTopButtonOnScroll(){
+  const  backToTopButton = document.querySelector("#backToTopButton")
   if (scrollY > 400){
     backToTopButton.classList.add('show')
   } else {
